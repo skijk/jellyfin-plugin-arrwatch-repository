@@ -6,8 +6,30 @@
     "description": "Marks monitored Radarr movies in Jellyfin Enhanced and supplies cached upcoming digital releases to JellySpotlight.",
     "owner": "skijk",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png",
+    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png?v=0.2.6.0",
     "versions": [
+      {
+        "version": "0.2.6.0",
+        "changelog": "Return up to eight monitored unavailable movies for Coming soon. Known future digital releases appear first, followed by titles whose digital date is not yet announced. Includes the padded 16:9 plugin artwork and TMDB image fallback.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.6.0/RadarrWatch_0.2.6.0_jf10.11.11.zip",
+        "checksum": "419B2EF76E12E6CB66947772CD153CE0",
+        "timestamp": "2026-07-30T00:51:55Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "Fit the plugin artwork to a true 16:9 canvas with a compact centered mark and generous padding, preventing Jellyfin's card layout from cropping it. Includes the Coming soon image fallback from 0.2.4.0.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.5.0/RadarrWatch_0.2.5.0_jf10.11.11.zip",
+        "checksum": "EE7CF0E265EC9D29AFE0A955FA51510D",
+        "timestamp": "2026-07-30T00:49:37Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
       {
         "version": "0.2.4.0",
         "changelog": "Fix Coming soon images when Radarr's MediaCover route returns its login page. Only real image responses are accepted, with a secure image.tmdb.org fallback.",
