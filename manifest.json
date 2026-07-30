@@ -6,7 +6,19 @@
     "description": "Marks monitored Radarr movies in Jellyfin Enhanced and supplies cached upcoming digital releases to JellySpotlight.",
     "owner": "skijk",
     "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png",
     "versions": [
+      {
+        "version": "0.2.3.0",
+        "changelog": "Add centered Radarr Watch plugin artwork in the same bright visual family as the companion plugins. Includes the Coming soon artwork hostname fix from 0.2.2.0.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.3.0/RadarrWatch_0.2.3.0_jf10.11.11.zip",
+        "checksum": "DCA5130136695BDB09B47E53FF5AF949",
+        "timestamp": "2026-07-30T00:39:41Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
       {
         "version": "0.2.2.0",
         "changelog": "Fix Coming soon artwork when Radarr reports image URLs using an internal hostname. Image paths are now rebased onto the configured Radarr origin.",
