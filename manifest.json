@@ -2,12 +2,23 @@
   {
     "guid": "943575e3-77a3-47dc-b1e7-4e17d52442e2",
     "name": "Radarr Watch",
-    "overview": "Radarr monitoring and upcoming digital releases inside Jellyfin.",
-    "description": "Marks monitored Radarr movies in Jellyfin Enhanced and supplies cached upcoming digital releases to JellySpotlight.",
+    "overview": "Radarr integration for Jellyfin Web. Requires File Transformation and Radarr.",
+    "description": "Uses Radarr's v3 API. Jellyfin Enhanced request marking and JellySpotlight Coming soon are optional integrations.",
     "owner": "skijk",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png?v=0.2.7.0",
+    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png?v=0.2.8.0",
     "versions": [
+      {
+        "version": "0.2.8.0",
+        "changelog": "Publish clear dependency documentation in the plugin, catalog and repository. File Transformation and Radarr are required; Jellyfin Enhanced and JellySpotlight integrations are optional.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.8.0/RadarrWatch_0.2.8.0_jf10.11.11.zip",
+        "checksum": "5C5E05D1A825C7C4E6EB06938A820960",
+        "timestamp": "2026-07-30T20:40:26Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
       {
         "version": "0.2.7.0",
         "changelog": "Only return monitored unavailable movies with a known future digital release date. Unknown dates are no longer presented as Coming soon. Enlarges the plugin artwork while preserving safe card padding.",
