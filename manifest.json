@@ -8,6 +8,17 @@
     "category": "General",
     "versions": [
       {
+        "version": "0.2.2.0",
+        "changelog": "Fix Coming soon artwork when Radarr reports image URLs using an internal hostname. Image paths are now rebased onto the configured Radarr origin.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.2.0/RadarrWatch_0.2.2.0_jf10.11.11.zip",
+        "checksum": "0C431732E01869BD571C183EEF51507B",
+        "timestamp": "2026-07-30T00:34:26Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
+      {
         "version": "0.2.1.0",
         "changelog": "Fix Coming soon artwork by allowing browser image requests through Jellyfin's server-side Radarr proxy. The Radarr address and API key remain private.",
         "targetAbi": "10.11.0.0",
