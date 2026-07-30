@@ -1,0 +1,23 @@
+[
+  {
+    "guid": "943575e3-77a3-47dc-b1e7-4e17d52442e2",
+    "name": "Radarr Watch",
+    "overview": "Radarr monitoring and upcoming digital releases inside Jellyfin.",
+    "description": "Marks monitored Radarr movies in Jellyfin Enhanced and supplies cached upcoming digital releases to JellySpotlight.",
+    "owner": "skijk",
+    "category": "General",
+    "versions": [
+      {
+        "version": "0.2.0.0",
+        "changelog": "Add a secure Coming soon source for JellySpotlight containing monitored, unavailable movies ordered by digital release date. Artwork is proxied through Jellyfin and theatrical dates are ignored.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.0.0/RadarrWatch_0.2.0.0_jf10.11.11.zip",
+        "checksum": "BDF363D89447F7B69BE411AC83B84B16",
+        "timestamp": "2026-07-30T00:00:37Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  }
+]
