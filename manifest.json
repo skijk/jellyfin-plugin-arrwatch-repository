@@ -6,8 +6,19 @@
     "description": "Combines confirmed Radarr digital movie releases and monitored Sonarr season premieres for JellySpotlight. Radarr movie status for Jellyfin Enhanced remains available.",
     "owner": "skijk",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-arrwatch-repository/main/logo.png?v=0.3.0.0",
+    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-arrwatch-repository/main/logo.png?v=0.3.1.0",
     "versions": [
+      {
+        "version": "0.3.1.0",
+        "changelog": "Fix Sonarr season artwork by falling back to Sonarr's remote image URL when its local MediaCover cache cannot serve a valid image. External fallback is restricted to trusted HTTPS TVDB and TMDB image hosts.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-arrwatch-repository/releases/download/0.3.1.0/ArrWatch_0.3.1.0_jf10.11.11.zip",
+        "checksum": "169D7C3553070B0056C434BD439C6BC8",
+        "timestamp": "2026-07-31T16:12:15Z",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      },
       {
         "version": "0.3.0.0",
         "changelog": "Rename Radarr Watch to Arr Watch and add independent Sonarr support. Coming soon now combines confirmed future digital movie releases with monitored season premieres while excluding specials and later episodes.",
