@@ -1,108 +1,20 @@
 [
   {
     "guid": "943575e3-77a3-47dc-b1e7-4e17d52442e2",
-    "name": "Radarr Watch",
-    "overview": "Radarr integration for Jellyfin Web. Requires File Transformation and Radarr.",
-    "description": "Uses Radarr's v3 API. Jellyfin Enhanced request marking and JellySpotlight Coming soon are optional integrations.",
+    "name": "Arr Watch",
+    "overview": "Optional Radarr and Sonarr integrations for Jellyfin Web.",
+    "description": "Combines confirmed Radarr digital movie releases and monitored Sonarr season premieres for JellySpotlight. Radarr movie status for Jellyfin Enhanced remains available.",
     "owner": "skijk",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/logo.png?v=0.2.8.0",
+    "imageUrl": "https://raw.githubusercontent.com/skijk/jellyfin-plugin-arrwatch-repository/main/logo.png?v=0.3.0.0",
     "versions": [
       {
-        "version": "0.2.8.0",
-        "changelog": "Publish clear dependency documentation in the plugin, catalog and repository. File Transformation and Radarr are required; Jellyfin Enhanced and JellySpotlight integrations are optional.",
+        "version": "0.3.0.0",
+        "changelog": "Rename Radarr Watch to Arr Watch and add independent Sonarr support. Coming soon now combines confirmed future digital movie releases with monitored season premieres while excluding specials and later episodes.",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.8.0/RadarrWatch_0.2.8.0_jf10.11.11.zip",
-        "checksum": "5C5E05D1A825C7C4E6EB06938A820960",
-        "timestamp": "2026-07-30T20:40:26Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.7.0",
-        "changelog": "Only return monitored unavailable movies with a known future digital release date. Unknown dates are no longer presented as Coming soon. Enlarges the plugin artwork while preserving safe card padding.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.7.0/RadarrWatch_0.2.7.0_jf10.11.11.zip",
-        "checksum": "9879F79BE08485057185BD9C729F24B6",
-        "timestamp": "2026-07-30T01:01:29Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.6.0",
-        "changelog": "Return up to eight monitored unavailable movies for Coming soon. Known future digital releases appear first, followed by titles whose digital date is not yet announced. Includes the padded 16:9 plugin artwork and TMDB image fallback.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.6.0/RadarrWatch_0.2.6.0_jf10.11.11.zip",
-        "checksum": "419B2EF76E12E6CB66947772CD153CE0",
-        "timestamp": "2026-07-30T00:51:55Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.5.0",
-        "changelog": "Fit the plugin artwork to a true 16:9 canvas with a compact centered mark and generous padding, preventing Jellyfin's card layout from cropping it. Includes the Coming soon image fallback from 0.2.4.0.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.5.0/RadarrWatch_0.2.5.0_jf10.11.11.zip",
-        "checksum": "EE7CF0E265EC9D29AFE0A955FA51510D",
-        "timestamp": "2026-07-30T00:49:37Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.4.0",
-        "changelog": "Fix Coming soon images when Radarr's MediaCover route returns its login page. Only real image responses are accepted, with a secure image.tmdb.org fallback.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.4.0/RadarrWatch_0.2.4.0_jf10.11.11.zip",
-        "checksum": "597C51182CFF58A38706E42BA613714A",
-        "timestamp": "2026-07-30T00:45:31Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.3.0",
-        "changelog": "Add centered Radarr Watch plugin artwork in the same bright visual family as the companion plugins. Includes the Coming soon artwork hostname fix from 0.2.2.0.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.3.0/RadarrWatch_0.2.3.0_jf10.11.11.zip",
-        "checksum": "DCA5130136695BDB09B47E53FF5AF949",
-        "timestamp": "2026-07-30T00:39:41Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.2.0",
-        "changelog": "Fix Coming soon artwork when Radarr reports image URLs using an internal hostname. Image paths are now rebased onto the configured Radarr origin.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.2.0/RadarrWatch_0.2.2.0_jf10.11.11.zip",
-        "checksum": "0C431732E01869BD571C183EEF51507B",
-        "timestamp": "2026-07-30T00:34:26Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.1.0",
-        "changelog": "Fix Coming soon artwork by allowing browser image requests through Jellyfin's server-side Radarr proxy. The Radarr address and API key remain private.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.1.0/RadarrWatch_0.2.1.0_jf10.11.11.zip",
-        "checksum": "3CA06593AD24CF2793923EB24BF91455",
-        "timestamp": "2026-07-30T00:19:18Z",
-        "dependencies": [
-          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-        ]
-      },
-      {
-        "version": "0.2.0.0",
-        "changelog": "Add a secure Coming soon source for JellySpotlight containing monitored, unavailable movies ordered by digital release date. Artwork is proxied through Jellyfin and theatrical dates are ignored.",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-radarrwatch-repository/releases/download/0.2.0.0/RadarrWatch_0.2.0.0_jf10.11.11.zip",
-        "checksum": "BDF363D89447F7B69BE411AC83B84B16",
-        "timestamp": "2026-07-30T00:00:37Z",
+        "sourceUrl": "https://github.com/skijk/jellyfin-plugin-arrwatch-repository/releases/download/0.3.0.0/ArrWatch_0.3.0.0_jf10.11.11.zip",
+        "checksum": "C068C7E09BEEB16145A97B30BCFB36E3",
+        "timestamp": "2026-07-31T15:39:47Z",
         "dependencies": [
           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
         ]

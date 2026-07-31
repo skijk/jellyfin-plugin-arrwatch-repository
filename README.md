@@ -1,11 +1,11 @@
-# Radarr Watch plugin repository
+# Arr Watch plugin repository
 
-Jellyfin catalog for Radarr Watch releases.
+Development catalog for Arr Watch releases.
 
 Add this URL under **Dashboard → Plugins → Repositories**:
 
 ```text
-https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/main/manifest.json
+https://raw.githubusercontent.com/skijk/jellyfin-plugin-arrwatch-repository/main/manifest.json
 ```
 
 ## Dependencies and integrations
@@ -13,9 +13,11 @@ https://raw.githubusercontent.com/skijk/jellyfin-plugin-radarrwatch-repository/m
 | Component | Status | Used for |
 | --- | --- | --- |
 | Jellyfin 10.11.11 | Required | Supported server and web client |
-| File Transformation | Required | Loads the Radarr Watch web assets |
-| Radarr v3 API | Required service | Supplies monitored movie and digital release data |
-| Jellyfin Enhanced | Optional | Shows request/monitoring state in Enhanced search |
-| JellySpotlight | Optional consumer | Displays confirmed future digital releases in **Coming soon** |
+| File Transformation | Required | Loads the Arr Watch web assets |
+| Radarr v3 API | Optional | Movie monitoring state, digital release dates and artwork |
+| Sonarr v3 API | Optional | Future season premieres and artwork |
+| Jellyfin Enhanced | Optional | Shows Radarr monitoring state in Enhanced search |
+| JellySpotlight | Optional consumer | Displays movies and season premieres in **Coming soon** |
 
-Radarr Watch does not require Jelana, Playback Reporting, JellyBulletin or JS Injector.
+Radarr and Sonarr are configured and cached independently. Arr Watch does not
+require Jelana, Playback Reporting, JellyBulletin or JS Injector.
